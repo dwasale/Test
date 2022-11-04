@@ -12,9 +12,17 @@ public class Welcome {
         System.out.print("\nEnter your full name: ");
         String name = scanner.nextLine();
         System.out.println("Enter your full address: ");
-        String address = scanner.nextLine();
+        System.out.print("Street: ");
+        String streetNumber = scanner.nextLine();
+        System.out.print("Post Code: ");
+        String postCode = scanner.nextLine();
+        System.out.print("City: ");
+        String city = scanner.nextLine();
 
-        System.out.println(name);
-        System.out.println(address);
+        System.out.println("\n" + name);
+        System.out.println("Address");
+        System.out.println(streetNumber);
+        System.out.println(postCode);
+        System.out.println(city);
     }
 }
