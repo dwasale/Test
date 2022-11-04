@@ -11,7 +11,7 @@ Feature: User wants to login into their account
       Given an existing user
       When user open browser www.kmail.com
       And go to login page
-      Then enter a valid username 
+      Then enter a valid username
       And enter an invalid password
       And click login button
       Then user will not be able to login successfully
