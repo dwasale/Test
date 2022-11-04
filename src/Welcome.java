@@ -13,7 +13,7 @@ public class Welcome {
         String name = scanner.nextLine();
         System.out.println("Enter your full address: ");
         String address = scanner.nextLine();
-        
+
         System.out.println(name);
         System.out.println(address);
     }
