@@ -7,7 +7,7 @@ Feature: User wants to login into their account
     Then click on login button
     Then user should be able to login successfully
 
-    Scenario: User should not be able to login with valid username and invalid password
+  Scenario: User should not be able to login with valid username and invalid password
       Given an existing user
       When user open browser www.kmail.com
       And go to login page
@@ -16,7 +16,7 @@ Feature: User wants to login into their account
       And click login button
       Then user will not be able to login successfully
 
-      Scenario: User should not be able to login with invalid user name and valid password
+  Scenario: User should not be able to login with invalid user name and valid password
         Given and existing user
         When user open browser www.kmail.com
         And go to login page
@@ -25,7 +25,7 @@ Feature: User wants to login into their account
         And click login button
         Then user should not be able to login successfully
 
-        Scenario: User should not be able to login with invalid credentials
+  Scenario: User should not be able to login with invalid credentials
           Given an existing user
           When user open the browser www.kmail.com
           And go to login page
@@ -33,7 +33,7 @@ Feature: User wants to login into their account
           And clicl login button
           Then user should not be able to login successfully
 
-          Scenario: User should not be able to login in different web browser other then chrome with valid credentials
+  Scenario: User should not be able to login in different web browser other then chrome with valid credentials
             Given an existing user
             When user open www.kmail.com in safari browser
             And go to login page
@@ -41,14 +41,14 @@ Feature: User wants to login into their account
             And click login button
             Then user should not be able to login successfully
 
-            Scenario: User should not be able to login with blank and empty credentials
+  Scenario: User should not be able to login with blank and empty credentials
               Given an existing user
               When user open browser www.kmail.com
               And go to login page
               And click login button with empty username and password
               Then user should not be able to login successfully
 
-              Scenario: User should not be able to login with case sensitive credentials
+  Scenario: User should not be able to login with case sensitive credentials
                 Given an existing user
                 When user open the browser www.kmail.com
                 And go to login page
@@ -57,7 +57,7 @@ Feature: User wants to login into their account
                 And click login button
                 Then user should not be able to login successfully
 
-                Scenario: To verify user should be register before logging in
+  Scenario: To verify user should be register before logging in
                   Given a new user
                   When user open the browser www.kamil.com
                   And go to login page
